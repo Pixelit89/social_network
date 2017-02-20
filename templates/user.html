@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-2">
+            <aside>
+                <image src = '/media/{{ object.avatar }}' />
+                <p>{{ object.first_name }} {{ object.last_name }}</p>
+
+                <nav>
+                    <ul>
+                        <a>
+                            <li>
+                            Home
+                            </li>
+                        </a>
+                        <a>
+                            <li>
+                            Friends
+                            </li>
+                        </a>
+                        <a>
+                            <li>
+                            Gallery
+                            </li>
+                        </a>
+                        <a>
+                            <li>
+                            Messages
+                            </li>
+                        </a>
+                    </ul>
+                </nav>
+            </aside>
+        </div>
+        <div class="col-md-10">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        Search panel
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
