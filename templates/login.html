@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="row">
+        <div class="col-md-12">
+            <form method="post" action="{% url 'login_act' %}">
+                {% csrf_token %}
+                {{ form.username }}
+                {{ form.password }}
+                <input type="submit" value="Login" />
+            </form>
+        </div>
+    </div>
+{% endblock %}
