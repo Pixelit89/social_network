@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'main',
+    'chat',
 ]
 
 MIDDLEWARE = [
@@ -86,6 +87,12 @@ DATABASES = {
     }
 }
 
+
+SESSION_ENGINE = 'redis_sessions.session'
+
+API_KEY = '$0x3-U/\/1by3-P3W'
+
+SEND_MESSAGE_API_URL = 'http://127.0.0.1:8000/messages/send_message_api'
 
 # Password validation
 # https://docs.djangoproject.com/en/1.10/ref/settings/#auth-password-validators
