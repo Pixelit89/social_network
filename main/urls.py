@@ -7,5 +7,6 @@ urlpatterns = [
     url(r'^login_act/$', views.login_act, name='login_act'),
     url(r'^logout/$', views.logout_act, name="logout_act"),
     url(r'^registration/$', views.RegistrationView.as_view(), name='registration_view'),
-    url(r'^registration_act/$', views.registration_act, name='registration_act')
+    url(r'^registration_act/$', views.registration_act, name='registration_act'),
+    url(r'^messages/', include('chat.urls')),
 ]

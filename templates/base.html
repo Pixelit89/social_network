@@ -2,8 +2,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/privatemessages.css' %}">
     <link type="text/css" rel="stylesheet" href="{% static 'css/bootstrap.css' %}" />
     <link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <script type="text/javascript" src="{% static 'js/privatemessages.js' %}"></script>
+    {% block head %}{% endblock %}
+    <title>{% block title %}Личные сообщения{% endblock title %}</title>
 </head>
 <body>
     <div class="container">
@@ -11,5 +16,6 @@
     {% endblock %}
     </div>
     <script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jstz.main.js' %}"></script>
 </body>
 </html>
